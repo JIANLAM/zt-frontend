@@ -1,0 +1,15 @@
+/*页面美化*/
+
+/*修改弹框*/
+.collectionParameters .el-dialog{width: 600px;}
+.collectionParameters .el-dialog__body{padding: 30px 60px 20px 10px}
+.addSure {text-align:center;margin-top:15px}
+.addSure button:nth-child(1){margin-right: 30px}
+/*供应商设置,收货信息设置*/
+.supplier1 .el-dialog__body{padding-left: 60px}
+/*有的是700px大小的弹框*/
+.collectionParameters1 .el-dialog{width: 700px;}
+/*借阅规则980的大小*/
+.borrowingrules .el-dialog{width: 980px;}
+/*借阅规则下面的按钮间距调大*/
+.addSure1 button:nth-child(1){margin-right: 200px}

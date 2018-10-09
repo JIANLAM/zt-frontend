@@ -1,0 +1,82 @@
+[{
+	"path":"",
+	"component":"Home",
+	"name":"我的账户",
+  "redirect":"/information",
+  "children":[
+    {
+      "path":"information",
+      "name":"个人资料",
+      "meta":{"icon":"icon-msnui-person-info"},
+      "component":"myAccount/Information"
+    },
+    {
+      "path":"modifyPsd",
+      "name":"修改密码",
+      "component":"myAccount/ModifyPsd",
+      "meta": {"icon":"icon-AAICon-"}
+    }
+  ]
+},
+{
+    "path": "/manage",
+    "name": "借购管理",
+    "component":"Home",
+    "redirect":"/manage/DetailedList",
+    "children":[
+       {"path": "detailedList","name":"借购清单","component":"manage/DetailedList","meta":{"icon":"icon-qingdan"}},
+       {"path": "rule","name":"借购规则","component":"manage/Rule","meta":{"icon":"icon-guize"}},
+       {"path": "credit","name":"读者信用","component":"manage/Credit","meta":{"icon":"icon-xinyong"}}
+       
+    ]
+},
+{
+  "path": "/order",
+    "name": "订购管理",
+    "component":"Home",
+    "redirect":"/order/Catalog",
+    "children":[
+       {"path": "catalog","name":"征订目录","component":"order/Catalog","meta":{"icon":"icon-mulu"}},
+       {"path": "orderProcess","name":"荐购处理","component":"order/OrderProcess","meta":{"icon":"icon-jiangou"}},
+       {"path": "economics","name":"财经管理","component":"order/Economics","meta":{"icon":"icon-yusuan"}},
+       {"path": "orderList","name":"订购清单","component":"order/OrderList","meta":{"icon":"icon-dinggou"}},
+       {"path": "orderCollect","name":"订购验收","component":"order/OrderCollect","meta":{"icon":"icon-guize"}},
+       {"path": "orderRule","name":"订购规则","component":"order/OrderRule","meta":{"icon":"icon-guize"}},
+       {"path": "template","name":"数据导入模板","component":"order/Template","meta":{"icon":"icon-moban"}}
+    ]
+},
+{
+  "path": "/query",
+    "name": "数据查询",
+    "component":"Home",
+    "redirect":"/query/BorrowBuy",
+    "children":[
+       {"path": "borrowBuy","name":"借购单查询","component":"query/BorrowBuy","meta":{"icon":"el-icon-search"}},
+       {"path": "borrowBuyBook","name":"借购图书查询","component":"query/BorrowBuyBook","meta":{"icon":"icon-query-knowledge"}},
+       {"path": "orderQuery","name":"订购单查询","component":"query/OrderQuery","meta":{"icon":"icon-chaxun"}},
+       {"path": "orderBookQuery","name":"订购图书查询","component":"query/OrderBookQuery","meta":{"icon":"icon-chaxun1"}},
+       {"path": "groomBuyBook","name":"荐购图书查询","component":"query/GroomBuyBook","meta":{"icon":"icon-iconfontzhizuobiaozhunbduan35"}}  
+    ]
+},
+{
+  "path": "/bookCatalog",
+    "name": "新书目录",
+    "component":"Home",
+    "redirect":"/bookCatalog/BookList",
+    "children":[
+       {"path": "bookList","name":"新书列表","component":"bookCatalog/BookList","meta":{"icon":"icon-qingdan"}}
+    ]	
+},
+{
+  "path": "/interview",
+    "name": "采访参数",
+    "component":"Home",
+    "redirect":"/interview/Supplier",
+    "children":[
+       {"path": "supplier","name":"供应商设置","component":"interview/Supplier","meta":{"icon":"el-icon-setting"}},
+       {"path": "takeInfo","name":"收货信息设置","component":"interview/TakeInfo","meta":{"icon":"el-icon-setting"}},
+       {"path": "interviewNote","name":"采访日志","component":"interview/InterviewNote","meta":{"icon":"icon-qingdan"}}
+    ]	
+},
+{"path": "*", "component":"errorPage/404", "hidden": true }
+]
